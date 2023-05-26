@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog Page</title>
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="blog.css" rel = "stylesheet" type="text/css">
+    </head>
+    <body>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container px-4 px-lg-5">
+          <a class="navbar-brand" href="../HomePage.html">Students' Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutPage.html">About members</a></li>
+                <li class="nav-item"><a class="nav-link" href="FeaturePage.html">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="Blog Page/blog.html">Students' works</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+      <!--Cards-->
+        <div class ="BCardsContainer">
+            <div class="card">
+                <img src="Sean.png" alt="Proel">
+                <div class="intro">
+                    <h1>Cajipe</h1>
+                    <p>Cajipe's ProEl Project picture sources provided by our teacher in Proel to create a story scene and...   <br><button id="myBtn">Read more...</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Chris.png" alt="Webtec">
+                <div class="intro">
+                    <h1>Hamili</h1>
+                    <p>Christopher was assigned to create a website that display information on the his previous...<br><button id="myBtn2">Read more...</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Vega.jpg" alt="MobApp">
+                <div class="intro">
+                    <h1>Vega</h1>
+                    <p>Mercy was assigned to use the Adobe XD application for an activity...<br><button id="myBtn3">Read more...</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Bryan.png" alt="INAMANA">
+                <div class="intro">
+                    <h1>Dela Cerna</h1>
+                    <p>Dela Cerna created a web page with a navigation bar that includes clickable elements... <br><button id="myBtn4">Read more...</button></p>
+                </div>
+            </div>
+
+            <!-- The Modal 1 -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="modalpictures" src="Sean.png" alt="Proel">
+                <div class="ActivityDiscription">
+                    <br><br>Sean created a captivating story scene using picture sources provided by your teacher. 
+                    Through careful selection and arrangement, Sean crafted a visually engaging narrative that sparks curiosity and invites viewers to delve into the world
+                    he has created. His project showcases his artistic vision, storytelling abilities, and creativity in using visual cues to convey a compelling story.
+
+                </div>
+                </div>
+            
+            </div>
+            
+            <!-- The Modal 2 -->
+            <div id="myModal2" class="modal2">
+            
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close2">&times;</span>
+                    <img class="modalpictures" src="Chris.png" alt="WebTec">
+                    <div class="ActivityDiscription">
+                        <p class="modalpharagraph">
+                          <br><br>Christopher was assigned to create a website that display information on the his previous subjects that he has taken in the
+                          previous college years. After that, the professor assigned him to use "Bootstrap" and apply it on his webiste in order to train him on how to use These
+                          premade components/elements to prepare him for the upcoming final project. He completed it successfully by using a complete template with cards and 
+                          navigation bar to migrate his information to his new website.
+                        </p>
+                    </div>
+                </div>
+                
+                </div>
+                <!-- The Modal 3 -->
+            <div id="myModal3" class="modal3">
+            
+                <!-- Modal content -->
+                
+                <div class="modal-content">
+                    <span class="close3">&times;</span>
+                    <img class="modalpictures" src="Vega.jpg" alt="MobApp">
+                    <div class="ActivityDiscription">
+                        <p class="modalpharagraph">
+                          <br><br>Mercy was assigned to use the Adobe XD application for an activity in creating a prototype for a mobile application. Using the
+                          provided resources given by the proffesor, she decides to create a proffesional themed banking application. After the professor discussed the ins and outs
+                          of Adobe XD, Mercy wasted no time and completed his task with care and craftsmanship in an orderly time.
+                        </p>
+                    </div>
+                </div>
+                
+                </div>
+                <!-- The Modal 4 -->
+            <div id="myModal4" class="modal4">
+            
+                <!-- Modal content -->
+               
+                <div class="modal-content">
+                    <span class="close4">&times;</span>
+                    <img class="modalpictures" src="Bryan.png" alt="Proel">
+                    <p class="ActivityDiscription">
+                        <br><br>In this activity Bryan took on the task of creating a web page under the guidance of our teacher.
+                        With teacher's guidance, Bryan designed a web page that<br> features a navigation bar, complete with clickable elements. 
+                        This navigation bar serves as a central component of your web page, allowing users to <br>easily navigate through the 
+                        various sections or pages of your website.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            var modal2 = document.getElementById("myModal2");
+            var modal3 = document.getElementById("myModal3");
+            var modal4 = document.getElementById("myModal4");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            var btn2 = document.getElementById("myBtn2");
+            var btn3 = document.getElementById("myBtn3");
+            var btn4 = document.getElementById("myBtn4");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            var span2 = document.getElementsByClassName("close2")[0];
+            var span3 = document.getElementsByClassName("close3")[0];
+            var span4 = document.getElementsByClassName("close4")[0];
+            
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            btn2.onclick = function() {
+              modal2.style.display = "block";
+            }
+            btn3.onclick = function() {
+              modal3.style.display = "block";
+            }
+            btn4.onclick = function() {
+              modal4.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            span2.onclick = function() {
+              modal2.style.display = "none";
+            }
+            span3.onclick = function() {
+              modal3.style.display = "none";
+            }
+            span4.onclick = function() {
+              modal4.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            window.onclick = function(event) {
+              if (event.target == modal2) {
+                modal.style.display = "none";
+              }
+            }
+            window.onclick = function(event) {
+              if (event.target == modal3) {
+                modal3.style.display = "none";
+              }
+            }
+            window.onclick = function(event) {
+              if (event.target == modal4) {
+                modal4.style.display = "none";
+              }
+            }
+            </script>
+      <!-- Footer-->
+      <footer class="footer">
+        <div class="FooterContainer"><p>Group 2 - Students's Portfolio</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+</html>
